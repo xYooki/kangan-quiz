@@ -6,11 +6,11 @@ const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS
 const supabase = createClient(supabaseUrl, supabaseKey)
 
 //To grab information from the database?
-//const { data, error } = await supabase
- // .from('users')
-  //.select(`
- //     id, username,
-  //`)
+const { data1, error1 } = await supabase
+  .from('users')
+  .select(`
+      id, username,
+  `)
 
   //Third party Oauth with Github(COMMENTED OUT DUE TO VISCODE NOT LIKING BOTH)
   let { data, error } = await supabase.auth.signInWithOAuth({

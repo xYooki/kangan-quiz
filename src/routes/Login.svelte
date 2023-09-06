@@ -2,30 +2,12 @@
 <script>
   // import { supabase } from '../lib/supabase';
 
-  let username = 'user';
-  let password = 'user123';
+  let username = '';
+  let password = '';
 
-  async function loginUser() {
-    // try {
-    //   const { user, error } = await supabase.auth.signIn({
-    //     email: username, // Supabase uses 'email' for username authentication
-    //     password,
-    //   });
+  import GitHubSignIn from './GitHubSignIn.svelte';
 
-    //   if (error) {
-    //     console.error('Authentication error:', error.message);
-    //   } else {
-    //     console.log('Logged in as:', user);
-    //     // Redirect or update UI upon successful login
-    //   }
-    // } catch (error) {
-    //   console.error('Error logging in:', error.message);
-    // }
-  }
 </script>
-
-  
-  <!-- src/routes/Login.svelte -->
 
 <form on:submit={loginUser}>
     <label for="username">Username:</label>
@@ -37,4 +19,10 @@
     <button type="submit">Log In</button>
   </form>
   
+  <div>
+    <!-- Other content in your app -->
+    <GitHubSignIn />
+  </div>
+  
+
   
