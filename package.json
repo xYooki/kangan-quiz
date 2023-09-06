@@ -15,6 +15,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@supabase/supabase-js": "^2.33.1"
+		"@supabase/supabase-js": "^2.33.1",
+		"svelte-dialog": "^0.2.0"
 	}
 }

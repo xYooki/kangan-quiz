@@ -5,11 +5,12 @@
   let username = '';
   let password = '';
 
-  import GitHubSignIn from './GitHubSignIn.svelte';
+  //import GitHubSignIn from './GitHubSignIn.svelte';
+  import UserLogin from './UserLogin.svelte';
 
 </script>
 
-<form on:submit={loginUser}>
+<form on:submit={UserLogin}>
     <label for="username">Username:</label>
     <input type="text" id="username" bind:value={username} required />
   
@@ -21,7 +22,7 @@
   
   <div>
     <!-- Other content in your app -->
-    <GitHubSignIn />
+    <UserLogin />
   </div>
   
 
